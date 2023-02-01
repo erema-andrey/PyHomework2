@@ -6,6 +6,8 @@
 # 5 -> 1 0 1 1 0
 # 2
 
+
+n = int(input('Введите кол-во монет '))
 n = int(input())
 k = 0
 for i in range(n):
@@ -13,6 +15,5 @@ for i in range(n):
     if v == 1:
         k += 1
 print(k if k<n/2 else n-k)
-
  
 

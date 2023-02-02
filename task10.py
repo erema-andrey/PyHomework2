@@ -7,13 +7,18 @@
 # 2
 
 
-n = int(input('Введите кол-во монет '))
+import random
 
-k = 0
-for i in range(n):
-    v = int(input())
-    if v == 1:
-        k += 1
-print(k if k<n/2 else n-k)
- 
+n = int(input('Введите кол-во монет: '))
+string = ''
+i = 0
+result = 0
+while i < n:
+    x = random.randint(0, 1)
+    if x == 0:
+        result += 1
+    string += str(x)
+    i += 1
+print('Наши монеты: ', string,', нужно перевернуть: ',result)
+
 
